@@ -18,20 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('/etudiant',[EtudiantController::class,"index"]);
 Route::get('/contact', function () {
     return view('contact');
 });
 
 // Route::get('/etudiant', function () {
-//     $nom = 'Omar ';
-//     $prenom = 'BOUHDIDA';
+//     $nom = 'louey ';
+//     $prenom = 'saadallah';
 //     return view('etudiant', compact('nom', 'prenom')); 
 // });
 
 // Route::get('/etudiant', function () {
-//     $nom = 'Omar ';
-//     $prenom = 'BOUHDIDA';
+//     $nom = 'louey  ';
+//     $prenom = 'saadallah';
 //     return view('etudiant', [
 //         'nom'=>$nom,
 //         'prenom'=>$prenom,
