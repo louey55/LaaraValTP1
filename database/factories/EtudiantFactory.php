@@ -22,7 +22,7 @@ class EtudiantFactory extends Factory
         return [
             'nom' => $this->faker->lastName(),
             'prenom' => $this->faker->firstName(),
-            'classe_id' => rand(1, 6), // Assurez-vous que ce champ correspond à votre migration
+            'classes_id' => rand(1, 6), // Assurez-vous que ce champ correspond à votre migration
         ];
     }
 }
