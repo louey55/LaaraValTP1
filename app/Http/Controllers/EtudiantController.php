@@ -23,7 +23,7 @@ class EtudiantController extends Controller
         $classe = Classe::all();  // Correction de l'opérateur =
         
         // Retourne la vue 'create' avec la liste des classes
-        return view('create', compact('classes'));
+        return view('create', compact('classe'));
     }
 
     public function store(Request $request)
@@ -32,7 +32,7 @@ class EtudiantController extends Controller
         $request->validate([
             'nom' => 'required',    // Utilisation correcte de =>
             'prenom' => 'required', // Utilisation correcte de =>
-            'classes_id' => 'required'
+            'classes_id' => 'required',
         ]);
 
         // Création de l'étudiant
@@ -59,6 +59,7 @@ class EtudiantController extends Controller
             'nom' => 'required',
             'prenom' => 'required',
             'classes_id' => 'required'
+            
         ]);
     
         // Mise à jour de l'étudiant
